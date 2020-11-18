@@ -26,15 +26,15 @@
     
     <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script type="text/javascript" src="/assets/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/jquery.min.js"></script>
 
     <!-- custom script -->
-    <script type="text/javascript" src="/assets/lib/main.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/lib/main.js"></script>
     {% if page.vendor %}
-        <script type="text/javascript" src="/assets/vendor/{{ page.vendor }}.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/{{ page.vendor }}.js"></script>
     {% endif %}
     {% if page.assets %}
-        <script type="text/javascript" src="/assets/lib/{{ page.assets }}.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/assets/lib/{{ page.assets }}.js"></script>
     {% endif %}
 
 
