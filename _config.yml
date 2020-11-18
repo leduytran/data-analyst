@@ -19,7 +19,7 @@ email: duyletr@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   User Experience Designer. Specialized in data-driven design systems that information is driven and refined by user-centered evaluation.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://leduytran.github.io/data-analyst/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 avatar: "/img/avatar-icon.png"
 
