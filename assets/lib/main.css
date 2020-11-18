@@ -1,0 +1,381 @@
+/* widths */
+
+.w1200 {
+    max-width: 1200px;
+}
+
+.w1100 {
+    max-width: 1100px;
+}
+
+.w1000 {
+    max-width: 1000px;
+}
+
+.w900 {
+    max-width: 900px;
+}
+
+.w800 {
+    max-width: 800px;
+}
+
+.w700 {
+    max-width: 700px;
+}
+
+.w600 {
+    max-width: 600px;
+}
+
+.w500 {
+    max-width: 500px;
+}
+
+.w400 {
+    max-width: 400px;
+}
+
+.w1200 img {
+    width: 1200px;
+    margin: 0 calc((1200px - 100%)/ -2);
+}
+
+.w800 img {
+    width: 800px;
+    margin: 0 calc((800px - 100%)/ -2);
+}
+
+table.e50 {
+    margin: 0 -50px;
+    width: calc(100% + 100px);
+}
+
+/* aligns */
+table.alignTop td {
+    vertical-align: top;
+}
+/***********************
+
+  GENERAL  
+
+***********************/
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 100%;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+
+}
+
+/* basic */
+
+body {
+    /* font-family: Arial, sans-serif !important; */
+    /* font-family: 'SF Mono','Roboto Mono', monospace; */
+    /* letter-spacing: .5px; */
+    overflow: auto;
+    margin: 0;
+    /* font-family: 'Noto Serif', serif; */
+    font-family: "Sailec", sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #222;
+    padding: 0;
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -moz-transition: -moz-transform 0.5s ease;
+    transition: transform 0.5s ease;
+}
+
+a {
+    background: transparent;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    color: #444;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+b{
+    font-weight: 600;
+}
+
+img {
+    border-style: none;
+    display: block;
+    color: transparent;
+}
+
+img {
+    width: 100%
+}
+
+img+img {
+    margin-top: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left:20px;
+    padding-right:20px;
+    margin-top: 70px;
+    margin-bottom: 200px;
+}
+
+p {
+    margin: 0 0 12px;
+}
+
+p.summary {
+    opacity: 0.5;
+}
+
+p em {
+    opacity: 0.7;
+}
+
+/* headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sailec", "Helvetica Neue", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #000;
+}
+
+
+h1 a {
+    text-decoration: none;
+}
+
+h1+p.info {
+    margin-top: -10px;
+    width: 70%;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+h3 {
+    margin-top: 50px;
+}
+
+h4 {
+    text-transform: uppercase;
+    opacity: 0.5;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+p.info span,
+p.info a {
+    opacity: 0.5
+}
+
+p.info a:hover {
+    opacity: 1
+}
+
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    border-spacing: 0px;
+    overflow-y: auto;
+}
+
+
+td,
+th {
+    text-align: left;
+    padding: 8px;
+    padding-left: 0;
+}
+
+
+/* Header */
+
+thead tr th {
+    text-transform: uppercase;
+    font-size: 80%;
+}
+
+/* Row */
+
+tr td {
+    border-top: 1px solid #eef3fa;
+}
+
+td img {
+    vertical-align: middle;
+    width: 40px;
+    border-radius: 400rem;
+}
+
+header {
+    margin-bottom: 15px;
+}
+
+/* Select */
+
+/* Reset Select */
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: white;
+    background-image: none;
+}
+
+/* Custom Select */
+
+.select {
+    position: relative;
+    display: inline-block;
+    min-width: 150px;
+    height: 40px;
+    /* line-height: 3;*/
+    background: white;
+    border: 1px solid #7A7A7A;
+    overflow: hidden;
+    border-radius: 0;
+
+}
+
+.select+.select {
+    margin-left: 10px;
+}
+
+select {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    color: #45494e;
+    letter-spacing: .5px;
+    font-size: 14px;
+    padding: 5px 52px 5px 10px;
+
+
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+/* Arrow */
+
+.select::after {
+    content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMThweCIgaGVpZ2h0PSIxMXB4IiB2aWV3Qm94PSIwIDAgMTggMTEiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQ5LjMgKDUxMTY3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkRlc2t0b3AtSEQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xOTMuMDAwMDAwLCAtMTEwLjAwMDAwMCkiIGZpbGw9IiM3QTdBN0EiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0yIj4KICAgICAgICAgICAgICAgIDxnIGlkPSIxLS0tRGVmYXVsdCI+CiAgICAgICAgICAgICAgICAgICAgPGcgaWQ9IkNvbnRyb2wiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMC4wMDAwMDAsIDkzLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iRmlsdGVyIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik05MywxOCBMOTMsMTcgTDExMSwxNyBMMTExLDE4IEw5MywxOCBaIE05NS44LDIzIEw5NS44LDIyIEwxMDguMiwyMiBMMTA4LjIsMjMgTDk1LjgsMjMgWiBNOTguNiwyOCBMOTguNiwyNyBMMTA1LjQsMjcgTDEwNS40LDI4IEw5OC42LDI4IFoiIGlkPSJpY29uIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==");
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    padding: 0 1em;
+    background: white;
+    pointer-events: none;
+}
+
+/* Transition */
+
+.select:hover::after {
+    color: #f39c12;
+}
+
+.select::after {
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Table Index */
+
+table.index th {
+    letter-spacing: 5px;
+    text-transform: uppercase
+}
+
+table.index tr {
+    cursor: pointer;
+}
+
+table.index tr td.step{
+    max-width: 130px;
+}
+
+table.index tr td.date {
+    width: 130px;
+}
+
+table.index tr td.date span,
+table.index tr td.step span{
+    opacity: 0.5;
+}
+
+table.index tr td a {
+    display: block;
+    color: #45494e;
+    text-decoration: none;
+
+}
+
+table.index tr td a+p.summary {
+    margin-top: 3px;
+    margin-bottom: 8px;
+    width: 90%
+}
+
+.section + .section{
+    margin-top: 50px;
+    padding-top: 50px;
+}
