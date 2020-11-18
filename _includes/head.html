@@ -1,0 +1,60 @@
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  {% if page.url == "/404.html" %}
+  <meta http-equiv="refresh" content="5; url=/" />
+  {% endif %}
+  <title>
+    {% if page.title %} {{ page.title }} {% else %} {{ site.title }} {% endif %}
+  </title>
+  <meta name="author" content="{{ site.author }}" />
+  <meta name="description" content="{{ site.description }}" />
+
+  <link
+    rel="canonical"
+    href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+  />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
+  href="{{ "/feed.xml " | prepend: site.baseurl | prepend: site.url }}">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/assets/lib/fav-d.png" />
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link type="text/css" rel="stylesheet" href="/assets/lib/normalize.css" />
+  <link type="text/css" rel="stylesheet" href="/assets/lib/loading.css" />
+  <link type="text/css" rel="stylesheet" href="/assets/lib/main.css" />
+  <link type="text/css" rel="stylesheet" href="/assets/fonts/sailec/style.css" />
+  {% if page.assets %}
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/assets/lib/{{ page.assets }}.css"
+  />
+  {% endif %}
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-106774056-1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-106774056-1");
+  </script>
+</head>

@@ -1,0 +1,14 @@
+name: Bookmarks
+items:
+  - title: OLAP cube (a multidimensional database)
+    url: https://en.wikipedia.org/wiki/OLAP_cube
+    date: 2018-03-15
+
+  - title: Star schema (a data warehousing architecture model)
+    url: https://en.wikipedia.org/wiki/Star_schema
+    date: 2018-04-01
+  
+  - title: Red routes (are the key tasks that users want to carry out with the product)
+    url: https://www.userfocus.co.uk/articles/redroutes.html
+    date: 2018-03-10
+    

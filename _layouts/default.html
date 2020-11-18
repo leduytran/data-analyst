@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang | default: site.lang | default: " en " }}">
+    {% include head.html %}
+
+<body>
+    <!-- Loading
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="se-pre-con"></div>
+    
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    {% case page.screen %}
+        {% when 'full' %}
+            <div class="container">
+        {% when '1000' %}
+            <div class="container w1000">
+        {% when '800' %}
+            <div class="container w800">
+        {% when null %}
+            <div class="container w800">
+    {% endcase %}
+        {{ content }}
+            <a href="#" id="back-to-top" title="Back to top">&#10514;</a>
+        </div>
+    
+    
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type="text/javascript" src="/assets/vendor/jquery.min.js"></script>
+
+    <!-- custom script -->
+    <script type="text/javascript" src="/assets/lib/main.js"></script>
+    {% if page.vendor %}
+        <script type="text/javascript" src="/assets/vendor/{{ page.vendor }}.js"></script>
+    {% endif %}
+    {% if page.assets %}
+        <script type="text/javascript" src="/assets/lib/{{ page.assets }}.js"></script>
+    {% endif %}
+
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang=" en ">
+    <head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>
+     Bus Schedule Design 
+  </title>
+  <meta name="author" content="Duy Tran" />
+  <meta name="description" content="User Experience Designer. Specialized in data-driven design systems that information is driven and refined by user-centered evaluation." />
+
+  <link
+    rel="canonical"
+    href="http://localhost:4000/bus-schedule-design/"
+  />
+  <link rel="alternate" type="application/rss+xml" title="Duy"
+  href="http://localhost:4000/feed.xml ">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/assets/lib/fav-d.png" />
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link type="text/css" rel="stylesheet" href="/assets/lib/normalize.css" />
+  <link type="text/css" rel="stylesheet" href="/assets/lib/loading.css" />
+  <link type="text/css" rel="stylesheet" href="/assets/lib/main.css" />
+  <link type="text/css" rel="stylesheet" href="/assets/fonts/sailec/style.css" />
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-106774056-1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-106774056-1");
+  </script>
+</head>
+
+
+<body>
+    <!-- Loading
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="se-pre-con"></div>
+    
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    
+            <div class="container w800">
+    
+        <h1>Bus Schedule Design</h1>
+<p class="summary">The problem given is the difficulty in searching for bus stop time on the schedule. It is challenging for people who want to quickly find the bus timings without spending too much time figuring out. The <a href="http://www.kamalan.com.tw/run.php">original website</a> is here (You could use google translate).</p>
+
+<h2 id="my-design-process">My Design Process</h2>
+<p class="w600"><img src="http://localhost:4000/assets/img/bus-schedule/flow.jpg" alt="process" title="Design Process" /></p>
+
+<h2 id="feature-understanding">Feature Understanding</h2>
+<p>There are three connected vital objects need to display on schedule:</p>
+
+<p>1.Bus stop at the station (synchronizing with the time): is designated to help users view waiting time for the next bus to arrive at the location.</p>
+
+<p class="w600"><img src="http://localhost:4000/assets/img/bus-schedule/routes.png" alt="routes" title="Routes" /></p>
+
+<p>2.Route: is designated to help users know operation hours, most optimal ways to commute between two places.</p>
+
+<p class="w600"><img src="http://localhost:4000/assets/img/bus-schedule/timing.png" alt="timing" title="Timing" /></p>
+
+<p>3.Detailed information of bus stop: is assigned to help user lookup information of all bus routes at the station.</p>
+
+<p class="w600"><img src="http://localhost:4000/assets/img/bus-schedule/information.png" alt="information" title="Information" /></p>
+
+<p>After I had a better understanding of key objects, I have listed some key features of the design in order to research.</p>
+
+<ol>
+  <li>View bus timing, bus station and routes</li>
+  <li>Search (filter by bus stop, route, time range)</li>
+  <li>View detail of bus stop (station)</li>
+  <li>Download route as pdf</li>
+</ol>
+
+<h2 id="research">Research</h2>
+
+<p>I never design a timetable or anything related to lots of numbers that show on the web page before. Therefore, I try to think as simple as I can and this schedule I imagine it looks like a class timetable or simple calendar.</p>
+
+<p class="w1200"><img src="http://localhost:4000/assets/img/bus-schedule/research.jpg" alt="research" title="Research" /></p>
+
+<h2 id="user-flow">User flow</h2>
+
+<p>The user goal is finding precisely the bus timing which matched route to the bus stop. So the design is mainly required to help him achieve this goal.</p>
+
+<p class="w800"><img src="http://localhost:4000/assets/img/bus-schedule/user-flow.jpg" alt="user-flow" title="User flow" /></p>
+
+<h2 id="moodboard">Moodboard</h2>
+
+<p>A mood board is one of the visual deliverables in the design process. It is a collage that generally consists of images, text, and objects that describes the feelings we obtain through the digital products aside from the actual layout of pages.</p>
+
+<p class="w1200"><img src="http://localhost:4000/assets/img/bus-schedule/moodboard.jpg" alt="moodboard" title="Moodboard" /></p>
+
+<h2 id="ui-design">UI Design</h2>
+
+<p>After I decided on the visual style, I applied user flow to moodboard to create a few designs.</p>
+
+<h4 id="main-view-shows-all-routes-and-operation-hours">MAIN VIEW SHOWS ALL ROUTES AND OPERATION HOURS.</h4>
+
+<p class="w1200"><img src="http://localhost:4000/assets/img/bus-schedule/design-home.png" alt="design-home" title="Home" /></p>
+
+<h4 id="filter-by-bus-stop-route-or-time-range">FILTER BY BUS STOP, ROUTE OR TIME RANGE.</h4>
+
+<p class="w1200"><img src="http://localhost:4000/assets/img/bus-schedule/design-view-filter.png" alt="design-view-filter" title="Filter" /></p>
+
+<h4 id="applied-filter">APPLIED FILTER.</h4>
+
+<p class="w1200"><img src="http://localhost:4000/assets/img/bus-schedule/design-view-filter-data.png" alt="design-view-filter-data" title="Filter Data" /></p>
+
+<h4 id="view-detail-of-bus-stop-station">VIEW DETAIL OF BUS STOP STATION.</h4>
+
+<p class="w1200"><img src="http://localhost:4000/assets/img/bus-schedule/design-view-detail-station.png" alt="design-view-detail-station" title="Detail" /></p>
+
+<h4 id="hover-on-indicator">HOVER ON INDICATOR</h4>
+
+<p class="w1200"><img src="http://localhost:4000/assets/img/bus-schedule/design-home-hover-info.png" alt="design-home-hover-info" title="Home Hover Info" /></p>
+
+<h4 id="hover-on-ardp">HOVER ON AR/DP</h4>
+
+<p class="w1200"><img src="http://localhost:4000/assets/img/bus-schedule/design-home-hover-info2.png" alt="design-home-hover-info2" title="Home Hover Info" /></p>
+
+
+            <a href="#" id="back-to-top" title="Back to top">&#10514;</a>
+        </div>
+    
+    
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type="text/javascript" src="/assets/vendor/jquery.min.js"></script>
+
+    <!-- custom script -->
+    <script type="text/javascript" src="/assets/lib/main.js"></script>
+    
+    
+
+
+</body>
+</html>
